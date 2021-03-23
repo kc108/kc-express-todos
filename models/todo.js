@@ -1,5 +1,6 @@
 module.exports = {
-    getAll
+    getAll,
+    getOne
    };
    
    const todos = [
@@ -8,6 +9,12 @@ module.exports = {
     {text: 'Buy Milk', done: false}
    ];
    
-   function getAll() {
+   function getAll(id) {
     return todos;
    }
+   
+   // Here's our latest function for this module
+   function getOne(id) {
+    return todos[id];
+   }
+

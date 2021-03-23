@@ -1,8 +1,23 @@
-const express = require('express');
-const router = express.Router();
+//************************** */
+// Create New Router
+//************************** */
+// import express
+const express = require("express")
+// create a new router
+const router = express.Router()
 
-router.get('/', function(req, res) {
-    res.render('index');
-});
+//************************** */
+// Routes
+//************************** */
 
-module.exports = router;
+// routes
+router.get("/", (req, res) => {
+    res.render("index")
+})
+
+//************************** */
+// Export Router
+//************************** */
+
+//export the route
+module.exports = router
